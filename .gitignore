@@ -1,6 +1,7 @@
 /url/cache
 /.emacs.desktop
 /auto-save-list
+/backup
 /network-security.data
 /.session
 /session.*
