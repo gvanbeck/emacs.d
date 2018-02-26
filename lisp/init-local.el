@@ -1,6 +1,6 @@
 ;;HERE MY PRIVATE SETTINGS
 
 (require 'init-lilypond)
-(require 'xmlformat)
+(require 'init-xmlformat)
 
 (provide 'init-local)

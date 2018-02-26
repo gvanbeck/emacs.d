@@ -10,4 +10,4 @@
    "*XMLFormat Error Buffer*"
    t))
 
-(provide 'xmlformat)
+(provide 'init-xmlformat)
