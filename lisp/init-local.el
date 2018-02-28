@@ -13,4 +13,24 @@
 (require 'init-lilypond)
 (require 'init-xmlformat)
 
+;;lsp-mode with php
+(add-to-list 'load-path "~/.emacs.d/vendor/lsp-php")
+(add-to-list 'load-path "~/.emacs.d/vendor/lsp-mode")
+(add-to-list 'load-path "~/.emacs.d/vendor/lsp-ui")
+
+(require 'lsp-mode)
+
+(require 'lsp-ui)
+(add-hook 'lsp-mode-hook 'lsp-ui-mode)
+
+(require 'lsp-php)
+(add-hook 'php-mode-hook #'lsp-ui-mode)
+
+(custom-set-variables
+ '(lsp-php-language-server-command (quote ("php" "/Users/gertvanbeckevoort/php-language-server/vendor/bin/php-language-server.php")))
+ )
+;;end lsp-mode with php
+
+
 (provide 'init-local)
+;;;init-local ends here
